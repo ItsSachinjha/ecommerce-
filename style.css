@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   background-color: #f8f9fa;
+   padding-top: 110px; /* To avoid content hidden behind fixed navbar */
+}
+
+/* Fixed Main Navbar */
+.navbar {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1030;
+   background-color: #0d3b66 !important; /* Dark blue */
+}
+
+.sub-navbar {
+   top: 66px;
+}
+
+/* Sub-navbar styling */
+.sub-navbar .nav-link {
+   color: #c2c0c0 !important;
+   font-weight: 500;
+   padding: 0.5rem 1rem;
+}
+
+.sub-navbar .nav-link:hover {
+   color: #ffffff !important;
+}
+
+/* Carousel */
+.carousel-item img {
+   height: 60vh;
+   object-fit: cover;
+}
+
+/* Product Card Images */
+.card-img-top {
+   width: 100%;
+   aspect-ratio: 1 / 1;
+   object-fit: cover;
+   background-color: #f0f0f0;
+}
+
+/* Category Box */
+.category-box {
+   font-size: 1.2rem;
+   font-weight: 600;
+   transition: all 0.3s ease;
+   cursor: pointer;
+}
+
+.category-box:hover {
+   background-color: #316194;
+   color: rgb(237, 13, 13);
+}
+
+/* Card Hover */
+.card:hover {
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+   transform: scale(1.02);
+   transition: 0.3s ease-in-out;
+}
+
+/* Responsive Fix */
+@media (max-width: 576px) {
+   .carousel-item img {
+      height: 200px;
+   }
+
+   .sub-navbar .nav-link {
+      margin: 0 8px;
+      font-size: 14px;
+   }
+}
+/* sign in */
+.login-container {
+   max-width: 400px;
+   margin: 160px auto 50px; /* space for fixed navbars */
+   padding: 30px;
+   background-color: white;
+   border-radius: 12px;
+   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+.btn-login {
+   background-color: #2874f0;
+   border: none;
+}
+.btn-login:hover {
+   background-color: #1a5edb;
+}
